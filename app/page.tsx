@@ -16,9 +16,9 @@ export default function Projects() {
             />
             <ProjectCard 
                 projectTitle="WASM Draw" 
-                textContent="Drawing web app that uses C++ and WebAssembly to draw and render the canvas." 
+                textContent="Drawing web app that uses C++ and WebAssembly to render the canvas, with WebSocket support for real-time collaborative drawing between clients." 
                 imgSrc="wasmdraw.svg"
-                href="https://gdhillon2.github.io/WASM-Draw/"
+                href="https://wasm-draw.art"
             />
             <ProjectCard 
                 projectTitle="Self Driving Car" 
@@ -28,7 +28,7 @@ export default function Projects() {
                 outerBgColor="bg-slate-950"
                 outerBorderColor="border-slate-900"
                 innerBorderColor="border-slate-700"
-                href="https://github.com/gdhillon2/self-driving-car"
+                href="https://github.com/gurvir-dhillon1/self-driving-car"
             />
             </div>
         </div>
