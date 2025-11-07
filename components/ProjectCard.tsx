@@ -1,4 +1,3 @@
-"use client";
 import { ArrowRightIcon } from '@heroicons/react/16/solid';
 import Link from 'next/link';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
