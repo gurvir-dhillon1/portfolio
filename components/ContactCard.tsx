@@ -25,7 +25,7 @@ export default function ContactCard({ text, tooltip, icon, link, copy_string }: 
             {text && <div className="text-center">{text}</div>}
             <span 
                 className="absolute top-full mt-1 left-1/2 whitespace-nowrap transform -translate-x-1/2 group-hover:opacity-100 
-                transition-opacity opacity-0 bg-transparent text-white text-xs rounded-lg p-3 pointer-events-none"
+                transition-opacity opacity-0 bg-transparent text-primary text-xs rounded-lg p-3 pointer-events-none"
             >
                 {tooltipText}
             </span>

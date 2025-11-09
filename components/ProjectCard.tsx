@@ -37,10 +37,10 @@ export default function ProjectCard({
                     <ArrowRightIcon className="hidden md:block more-info-arrow h-6 w-6 transition-all duration-300 group-hover:left-[93%]" />
                     <div className="w-full glare-item-inner"></div>
                     <div className="p-[32px]">
-                        <div className="text-xl text-shadow font-bold text-white">
+                        <div className="text-xl text-shadow font-bold text-primary">
                             {projectTitle}
                         </div>
-                        <div className="text-base text-white">
+                        <div className="text-base text-primary">
                             {textContent}
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Link from "next/link";
 import "./globals.css";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,20 +28,21 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex w-full min-h-screen dark">
       <body
-        className={`flex flex-col justify-center ${geistSans.variable} ${geistMono.variable} antialiased bg-black h-full w-full`}
+        className={`flex flex-col justify-center ${geistSans.variable} ${geistMono.variable} antialiased bg-background h-full w-full`}
       >
-        <div className="flex-col hidden md:flex items-start w-fit h-fit p-5 text-shadow text-lg text-white fixed top-0 left-0">
+        <div className="flex-col hidden md:flex items-start w-fit h-fit p-5 text-shadow text-lg text-primary fixed top-0 left-0">
           <div>Gurvir Dhillon</div>
           <div className="text-sm">Software Engineer @ BW Design Group</div>
           <div className="text-sm">Sacramento, CA</div>
         </div>
-        <div className="flex justify-center items-end w-full h-[108px] base-text gap-5 py-5">
-          <Link href="/" className="hover:underline">
+        <div className="flex justify-center items-end w-full h-[108px] base-text gap-5 py-5 text-primary">
+          <Link href="/" className="hover:underline text-primary">
             Projects
           </Link>
-          <Link href="/contact" className="hover:underline">
+          <Link href="/contact" className="hover:underline text-primary">
             Contact
           </Link>
+          <ThemeToggle />
         </div>
         {children}
       </body>

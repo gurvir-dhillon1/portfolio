@@ -2,7 +2,7 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function Projects() {
     return (
-        <div className="flex flex-col items-center w-full h-full bg-black base-text gap-5 p-5">
+        <div className="flex flex-col items-center w-full h-full bg-background base-text gap-5 p-5">
             <div className="animate-slide-in-up w-[100%] lg:w-[60%] h-fit grid grid-cols-1 gap-9 p-5">
             <ProjectCard 
                 projectTitle="WASM Draw" 
