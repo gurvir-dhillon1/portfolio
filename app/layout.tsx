@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Link from "next/link";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
+import NavBar from "@/components/NavBar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,15 +36,10 @@ export default function RootLayout({
           <div className="text-sm">Software Engineer @ BW Design Group</div>
           <div className="text-sm">Sacramento, CA</div>
         </div>
-        <div className="flex justify-center items-end w-full h-[108px] base-text gap-5 py-5 text-primary">
-          <Link href="/" className="hover:underline text-primary">
-            Projects
-          </Link>
-          <Link href="/contact" className="hover:underline text-primary">
-            Contact
-          </Link>
+        <div className="fixed top-0 right-0 p-5">
           <ThemeToggle />
         </div>
+        <NavBar />
         {children}
       </body>
     </html>
