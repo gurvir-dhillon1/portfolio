@@ -1,4 +1,4 @@
-const returnProject = (name: string, description: string, imgPath: string, href: string = '/'): Record<string, string> => {
+const returnProject = (name: string, description: string, imgPath: string = '', href: string = '/'): Record<string, string> => {
   return {
     name: name,
     description: description,
