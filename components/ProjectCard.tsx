@@ -31,7 +31,7 @@ export default function ProjectCard({
             target="_blank"
             rel="noopener noreferrer"
         >
-            <div className={`relative p-2 border ${outerBorderColor} rounded-3xl flex w-full h-fit md:h-[400px] lg:h-[500px] ${outerBgColor} group`}>
+            <div className={`transition-colors duration-300 relative p-2 border ${outerBorderColor} rounded-3xl flex w-full h-fit md:h-[400px] lg:h-[500px] ${outerBgColor} group`}>
                 <div className="w-full glare-item-outer"></div>
                 <div className={`flex flex-col w-full border ${innerBorderColor} rounded-2xl ${bgColor} relative overflow-hidden`}>
                     <ArrowRightIcon className="hidden md:block more-info-arrow h-6 w-6 transition-all duration-300 group-hover:left-[93%]" />

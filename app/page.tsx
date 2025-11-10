@@ -15,7 +15,7 @@ export default function Projects() {
         innerBorderColor:'dark:border-slate-700',
     }
     return (
-        <div className="flex flex-col items-center w-full h-full bg-background base-text gap-5 p-5">
+        <div className="flex flex-col items-center w-full h-full bg-background base-text gap-5 p-5 transition-colors duration-300">
             <div className="animate-slide-in-up w-[100%] lg:w-[60%] h-fit grid grid-cols-1 gap-9 p-5">
                 {ProjectList.map((info, index) => (
                         <ProjectCard 

@@ -29,7 +29,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="flex w-full min-h-screen dark">
       <body
-        className={`flex flex-col justify-center ${geistSans.variable} ${geistMono.variable} antialiased bg-background h-full w-full`}
+        className={`flex flex-col justify-center ${geistSans.variable} ${geistMono.variable} antialiased bg-background h-full w-full
+                    transition-colors duration-300`}
       >
         <div className="flex-col hidden md:flex items-start w-fit h-fit p-5 text-shadow text-lg text-primary fixed top-0 left-0">
           <div>Gurvir Dhillon</div>
