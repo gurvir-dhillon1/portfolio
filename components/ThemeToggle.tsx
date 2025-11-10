@@ -1,35 +1,35 @@
 'use client';
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function ThemeToggle() {
-  const [isDark, setIsDark] = useState<boolean | null>(null);
+  const enum MODES {
+    'DARK',
+    'LIGHT',
+    'RAINY'
+  };
 
-  useEffect(() => {
-    const html = document.documentElement;
-    setIsDark(html.classList.contains('dark'));
-  }, [])
+  const [themeMode, setThemeMode] = useState<MODES>(MODES.DARK);
 
   const toggleTheme = () => {
+    setThemeMode((themeMode + 1) % 3)
     const html = document.documentElement;
-
-    if (html.classList.contains('dark')) {
-      html.classList.remove('dark');
-      setIsDark(false);
-    }
-    else {
+    if (themeMode === MODES.LIGHT) {
+      html.classList.remove('dark')
+    } else {
       html.classList.add('dark');
-      setIsDark(true);
     }
   };
 
   return (
     <button
       onClick={toggleTheme}
-      className={`bg-gray-200 dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-lg transition-colors duration-300 opacity-0
-        ${isDark === null ? 'pointer-events-none' : 'animate-slide-in-down-delay-400'}`}
+      className='bg-gray-200 dark:bg-gray-800 text-black dark:text-white px-4 py-2 rounded-lg transition-colors duration-300 opacity-0
+        animate-slide-in-down-delay-400'
     >
-      {isDark ? 'dark' : 'light'}
+      {
+        themeMode
+      }
     </button>
   )
 }
